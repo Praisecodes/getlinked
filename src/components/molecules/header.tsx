@@ -1,10 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import NavOptions from '@/json/navOptions.json';
+import { Button } from "../atoms";
 
 const Header = (): React.ReactNode => {
   return (
-    <header className={`border-b text-white border-b-[#FFFFFF2E] bg-transparent flex items-center justify-between py-7 px-16`}>
+    <header className={`border-b font-montserrat text-white border-b-[#FFFFFF2E] bg-transparent flex items-center justify-between py-7 px-16`}>
       <Link href={`/`}>
         <Image
           src={`/images/getlinked.svg`}
@@ -15,7 +18,7 @@ const Header = (): React.ReactNode => {
         />
       </Link>
 
-      <section className={`space-x-16`}>
+      <section className={`space-x-24 flex items-center`}>
         <ul className={`space-x-12 text-base`}>
           {NavOptions.map((option)=>(
             <li className={`float-left`}>
@@ -28,6 +31,11 @@ const Header = (): React.ReactNode => {
           ))}
         </ul>
 
+        <div className={`w-[9rem] duration-150`}>
+          <Button onClick={()=>{}}>
+            Register
+          </Button>
+        </div>
       </section>
     </header>
   )
