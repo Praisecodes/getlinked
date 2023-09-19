@@ -6,3 +6,8 @@
   font-family: "montserrat";
   src: url('/fonts/Montserrat-Regular.ttf');
 }
+
+@font-face {
+  font-family: "clash display";
+  src: url("/fonts/ClashDisplay-Regular.otf");
+}

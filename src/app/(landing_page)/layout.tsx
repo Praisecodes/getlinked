@@ -5,7 +5,9 @@ const Layout = ({ children }: { children: React.ReactNode; }): React.ReactNode =
   return (
     <main>
       <Header />
-      {children}
+      <section className={`font-montserrat text-white`}>
+        {children}
+      </section>
       <Footer />
     </main>
   )

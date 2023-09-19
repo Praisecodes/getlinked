@@ -19,9 +19,9 @@ const Header = (): React.ReactNode => {
       </Link>
 
       <section className={`space-x-24 flex items-center`}>
-        <ul className={`space-x-12 text-base`}>
-          {NavOptions.map((option)=>(
-            <li className={`float-left`}>
+        <ul className={`space-x-12 text-sm`}>
+          {NavOptions.map((option, index)=>(
+            <li key={index} className={`float-left`}>
               <Link href={option.route}>
                 <p>
                   {option.name}

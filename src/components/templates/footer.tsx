@@ -4,7 +4,7 @@ import FooterLinks from '@/json/footerLinks.json';
 
 const Footer = (): React.ReactNode => {
   return (
-    <footer className={`py-10 text-white px-24`}>
+    <footer className={`py-10 font-montserrat text-white px-24`}>
       <section className={`flex items-start`}>
         <section className={`w-[40%]`}>
           <Image
@@ -41,10 +41,10 @@ const Footer = (): React.ReactNode => {
             <section>
               <h3 className={`text-[#D434FE] mb-2 text-base`}>Useful Links</h3>
               <ul>
-                {FooterLinks.map((links) => (
+                {FooterLinks.map((links, index) => (
                   <li>
-                    <Link href={links.route}>
-                      <p className={`font-montserrat text-xs my-3`}>
+                    <Link key={index} href={links.route}>
+                      <p className={`font-montserrat text-sm my-3`}>
                         {links.name}
                       </p>
                     </Link>
@@ -61,10 +61,10 @@ const Footer = (): React.ReactNode => {
                   alt="Phone Icon"
                   width={12}
                   height={12}
-                  className={`w-[12px] mr-4`}
+                  className={`w-[14px] mr-4`}
                 />
 
-                <p className={`text-xs`}>
+                <p className={`text-sm`}>
                   +234 6707653444
                 </p>
               </div>
@@ -75,10 +75,10 @@ const Footer = (): React.ReactNode => {
                   alt="Phone Icon"
                   width={12}
                   height={12}
-                  className={`w-[12px] mr-4`}
+                  className={`w-[14px] mr-4`}
                 />
 
-                <p className={`text-xs`}>
+                <p className={`text-sm`}>
                   27,Alara Street
                   Yaba 100012
                   Lagos State
@@ -99,7 +99,7 @@ const Footer = (): React.ReactNode => {
                   alt="Instagram Icon"
                   width={24}
                   height={24}
-                  className={`w-[24px]`}
+                  className={`w-[20px]`}
                 />
               </Link>
 
@@ -109,7 +109,7 @@ const Footer = (): React.ReactNode => {
                   alt="Instagram Icon"
                   width={24}
                   height={24}
-                  className={`w-[20px]`}
+                  className={`w-[18px]`}
                 />
               </Link>
 
@@ -119,7 +119,7 @@ const Footer = (): React.ReactNode => {
                   alt="Instagram Icon"
                   width={24}
                   height={24}
-                  className={`w-[12px]`}
+                  className={`w-[10px]`}
                 />
               </Link>
 
@@ -129,7 +129,7 @@ const Footer = (): React.ReactNode => {
                   alt="Instagram Icon"
                   width={24}
                   height={24}
-                  className={`w-[24px]`}
+                  className={`w-[20px]`}
                 />
               </Link>
             </section>

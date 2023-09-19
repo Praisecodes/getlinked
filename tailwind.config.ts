@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       "montserrat": "montserrat",
+      "clash-display": "clash display",
     },
     extend: {
       backgroundImage: {
