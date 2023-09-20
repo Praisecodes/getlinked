@@ -20,7 +20,7 @@ const Page = (): React.ReactNode => {
       </h1><br />
 
       {/**Hero Section */}
-      <section className={`lg:px-14 px-6 border-b border-b-[#FFFFFF2E] flex lg:flex-row flex-col items-center`}>
+      <section className={`lg:px-14 px-4 border-b border-b-[#FFFFFF2E] flex lg:flex-row flex-col items-center`}>
         <div className={`font-montserrat lg:w-[50%] w-full`}>
           <h1 className={`lg:text-7xl text-5xl font-extrabold font-clash-display`}>
             getlinked Tech Hackathon<span className={`text-[#D434FE]`}>1.0</span>

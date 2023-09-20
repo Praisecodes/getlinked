@@ -7,7 +7,7 @@ import { Button } from "../atoms";
 
 const Header = (): React.ReactNode => {
   return (
-    <header className={`border-b font-montserrat text-white border-b-[#FFFFFF2E] bg-transparent flex items-center justify-between py-7 px-16`}>
+    <header className={`border-b font-montserrat text-white border-b-[#FFFFFF2E] bg-transparent flex items-center justify-between py-7 lg:px-16 px-4`}>
       <Link href={`/`}>
         <Image
           src={`/images/getlinked.svg`}
@@ -37,6 +37,19 @@ const Header = (): React.ReactNode => {
           </Button>
         </div>
       </section>
+
+      {/**Mobile Nav */}
+      <div className={`lg:hidden block`}>
+          <button className={`p-2`}>
+            <Image 
+              src={`/icons/hamburger.svg`}
+              alt="Hamburger Icon"
+              width={19}
+              height={19}
+              className={`w-[19px]`}
+            />
+          </button>
+        </div>
     </header>
   )
 }
