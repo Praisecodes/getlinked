@@ -18,6 +18,7 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'button-gradient': "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
+        "text-grad": "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
       },
     },
   },

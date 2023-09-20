@@ -44,7 +44,7 @@ const Footer = (): React.ReactNode => {
                 {FooterLinks.map((links, index) => (
                   <li key={index}>
                     <Link href={links.route}>
-                      <p className={`font-montserrat text-sm my-3`}>
+                      <p className={`font-montserrat hover:bg-clip-text hover:bg-text-grad hover:text-transparent text-sm my-3 duration-150`}>
                         {links.name}
                       </p>
                     </Link>
