@@ -22,20 +22,20 @@ const Page = (): React.ReactNode => {
       {/**Hero Section */}
       <section className={`lg:px-14 px-4 border-b border-b-[#FFFFFF2E] flex lg:flex-row flex-col items-center`}>
         <div className={`font-montserrat lg:w-[50%] w-full`}>
-          <h1 className={`lg:text-7xl text-5xl font-extrabold font-clash-display`}>
+          <h1 className={`lg:text-7xl text-5xl font-extrabold lg:text-left text-center font-clash-display`}>
             getlinked Tech Hackathon<span className={`text-[#D434FE]`}>1.0</span>
           </h1>
-          <p className={`text-sm py-2 w-[23rem] max-w-full`}>
+          <p className={`text-sm py-2 w-[23rem] lg:text-left text-center max-w-full`}>
             Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize
           </p> <br />
 
-          <div className={`w-[8rem] mt-3`}>
+          <div className={`w-[8rem] mt-3 lg:mx-0 mx-auto`}>
             <Button onClick={() => { }}>
               Register
             </Button>
           </div> <br /> <br />
 
-          <section className={`font-unica-one flex space-x-3`}>
+          <section className={`font-unica-one mx-auto lg:mx-0 w-fit flex space-x-3`}>
             <div className={`flex items-baseline`}>
               <h2 className={`text-5xl`}>
                 00
@@ -87,11 +87,11 @@ const Page = (): React.ReactNode => {
         </div>
 
         <div className={`lg:w-[45%] lg:px-5 md:w-[60%] w-full lg:mt-0 mt-9`}>
-          <h2 className={`lg:text-3xl text-2xl lg:w-[80%] font-bold font-clash-display`}>
+          <h2 className={`lg:text-3xl text-center lg:text-left text-2xl lg:w-[80%] font-bold font-clash-display`}>
             Introduction to getlinked <span className={`text-[#D434FE]`}>tech Hackathon 1.0</span>
           </h2>
 
-          <p className={`text-[13px] pt-3`}>
+          <p className={`text-[13px] lg:text-left text-center pt-3`}>
             Our tech hackathon is a melting pot of visionaries, and its purpose is as
             clear as day: to shape the future. Whether you&apos;re a coding genius, a
             design maverick, or a concept wizard, you&apos;ll have the chance to transform
@@ -114,11 +114,11 @@ const Page = (): React.ReactNode => {
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8/eCBPQMRgHFUIX0VAgB4UB0vFSLebwAAAABJRU5ErkJggg=="
           />
-          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] py-3 font-bold font-clash-display`}>
+          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] py-3 lg:text-left text-center font-bold font-clash-display`}>
             Rules and <span className={`text-[#D434FE]`}>Guidelines</span>
           </h2>
 
-          <p className={`text-sm`}>
+          <p className={`text-sm text-center lg:text-left`}>
             Our tech hackathon is a melting pot of visionaries, and its purpose is as
             clear as day: to shape the future. Whether you&apos;re a coding genius, a
             design maverick, or a concept wizard, you&apos;ll have the chance to transform
@@ -161,19 +161,19 @@ const Page = (): React.ReactNode => {
             height={32}
             className={`w-[26px] h-[32px] block lg:hidden absolute -top-10 right-[47%]`}
           />
-          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] py-3 font-bold font-clash-display`}>
+          <h2 className={`lg:text-3xl text-2xl lg:text-left text-center lg:w-[50%] py-3 font-bold font-clash-display`}>
             Judging Criteria <span className={`text-[#D434FE]`}>Key attributes</span>
           </h2>
 
           {
             KeyAttributes.map((attribute, index) => (
-              <p key={index} className={`text-[13px] my-3`}>
+              <p key={index} className={`text-[13px] my-3 lg:text-left text-center`}>
                 <span className={`text-[#D434FE] font-bold`}>{attribute.title}:</span> {attribute.description}
               </p>
             ))
           } <br />
 
-          <div className={`w-[8rem]`}>
+          <div className={`w-[8rem] lg:mx-0 mx-auto`}>
             <Button onClick={() => { }}>
               Read More
             </Button>
@@ -184,13 +184,13 @@ const Page = (): React.ReactNode => {
       {/**Faqs Section */}
       <section className={`py-8 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex lg:flex-row flex-col-reverse items-center`}>
         <div className={`lg:w-[50%] w-full relative lg:px-7`}>
-          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] lg:mt-0 mt-9 py-3 font-bold font-clash-display`}>
+          <h2 className={`lg:text-3xl lg:text-left text-center text-2xl lg:w-[50%] lg:mt-0 mt-9 py-3 font-bold font-clash-display`}>
             Frequently Asked <span className={`text-[#D434FE]`}>Questions</span>
           </h2>
 
-          <p className={`text-[13px] lg:w-[70%]`}>
+          <p className={`text-[13px] text-center lg:text-left lg:w-[70%]`}>
             We got answers to the questions that you might
-            want to ask about getlinked Hackathon 1.0
+            want to ask about <span className={`font-bold`}>getlinked Hackathon 1.0</span>
           </p> <br />
 
           <section>
