@@ -11,3 +11,8 @@
   font-family: "clash display";
   src: url("/fonts/ClashDisplay-Regular.otf");
 }
+
+@font-face {
+  font-family: "unica one";
+  src: url("/fonts/UnicaOne-Regular.ttf");
+}

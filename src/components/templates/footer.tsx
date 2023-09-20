@@ -4,7 +4,7 @@ import FooterLinks from '@/json/footerLinks.json';
 
 const Footer = (): React.ReactNode => {
   return (
-    <footer className={`py-10 font-montserrat text-white px-24`}>
+    <footer className={`py-10 bg-[#100B20] font-montserrat text-white px-24`}>
       <section className={`flex items-start`}>
         <section className={`w-[40%]`}>
           <Image
@@ -42,8 +42,8 @@ const Footer = (): React.ReactNode => {
               <h3 className={`text-[#D434FE] mb-2 text-base`}>Useful Links</h3>
               <ul>
                 {FooterLinks.map((links, index) => (
-                  <li>
-                    <Link key={index} href={links.route}>
+                  <li key={index}>
+                    <Link href={links.route}>
                       <p className={`font-montserrat text-sm my-3`}>
                         {links.name}
                       </p>
