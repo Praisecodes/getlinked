@@ -3,7 +3,7 @@ import { Footer } from "@/components/templates";
 
 const Layout = ({ children }: { children: React.ReactNode; }): React.ReactNode => {
   return (
-    <main>
+    <main className={`bg-main_bg bg-repeat`}>
       <Header />
       <section className={`font-montserrat text-white`}>
         {children}

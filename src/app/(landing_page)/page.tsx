@@ -222,15 +222,37 @@ const Page = (): React.ReactNode => {
       </section>
 
       {/**Timeline Section */}
-      <section className={`py-14 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex flex-col items-center justify-center`}>
+      {/* <section className={`py-14 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex flex-col items-center justify-center`}>
         <h1 className={`font-clash-display text-3xl font-extrabold`}>
           Timeline
         </h1>
         <p className={`text-white text-sm w-[33%] mt-2 text-center`}>
           Here is the breakdown of the time we anticipate
           using for the upcoming event.
-        </p>
-      </section>
+        </p> <br /> <br />
+
+        <section className={` px-4 flex justify-center items-center flex-col`}>
+          <div className={`flex items-end justify-between`}>
+            <section className={`w-[25rem]`}>
+              <h2 className={`text-[#D434FE] text-right font-bold text-xl`}>
+                Hackathon Announcement
+              </h2>
+              <p className={`text-sm text-right`}>
+                The getlinked tech hackathon 1.0 is formally announced
+                to the general public and teams begin to get ready to register
+              </p>
+            </section>
+
+            <p className={`bg-text-grad px-5 py-3 mx-20 rounded-full`}>
+              1
+            </p>
+
+            <p className={`text-[#D434FE] text-xl font-bold`}>
+              November 18, 2023
+            </p>
+          </div>
+        </section>
+      </section> */}
     </>
   )
 }
