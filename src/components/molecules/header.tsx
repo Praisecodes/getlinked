@@ -18,7 +18,7 @@ const Header = (): React.ReactNode => {
         />
       </Link>
 
-      <section className={`space-x-24 flex items-center`}>
+      <section className={`space-x-24 lg:flex hidden items-center`}>
         <ul className={`space-x-12 text-sm`}>
           {NavOptions.map((option, index)=>(
             <li key={index} className={`float-left`}>
@@ -31,7 +31,7 @@ const Header = (): React.ReactNode => {
           ))}
         </ul>
 
-        <div className={`w-[9rem] duration-150`}>
+        <div className={`w-[9rem] lg:block hidden duration-150`}>
           <Button onClick={()=>{}}>
             Register
           </Button>

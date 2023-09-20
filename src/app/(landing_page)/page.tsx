@@ -8,24 +8,24 @@ import Faqs from '@/json/faq.json';
 const Page = (): React.ReactNode => {
   return (
     <>
-      <h1 className={`text-xl italic font-bold w-full text-right relative px-14 py-5`}>
+      <h1 className={`lg:text-xl text-base italic font-bold w-full text-right relative lg:px-14 px-4 py-5`}>
         Igniting a Revolution in HR Innovation
         <Image
           src={`/images/curve.svg`}
           alt="Curve"
           width={253}
           height={253}
-          className={`absolute w-[135px] top-[70%] right-14`}
+          className={`absolute w-[135px] top-[70%] lg:right-14 right-4`}
         />
       </h1><br />
 
       {/**Hero Section */}
-      <section className={`px-14 border-b border-b-[#FFFFFF2E] flex items-start`}>
-        <div className={`font-montserrat pt-28 w-[50%]`}>
-          <h1 className={`text-7xl font-extrabold font-clash-display`}>
+      <section className={`lg:px-14 px-6 border-b border-b-[#FFFFFF2E] flex lg:flex-row flex-col items-center`}>
+        <div className={`font-montserrat lg:w-[50%] w-full`}>
+          <h1 className={`lg:text-7xl text-5xl font-extrabold font-clash-display`}>
             getlinked Tech Hackathon<span className={`text-[#D434FE]`}>1.0</span>
           </h1>
-          <p className={`text-sm py-2 w-[23rem]`}>
+          <p className={`text-sm py-2 w-[23rem] max-w-full`}>
             Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize
           </p> <br />
 
@@ -59,19 +59,21 @@ const Page = (): React.ReactNode => {
           </section>
         </div>
 
-        <div className={`flex-1`}>
+        <div className={`flex-1 lg:mt-0 mt-8`}>
           <Image
             src={`/images/hero_image.svg`}
             alt="Hero Image"
             height={200}
             width={200}
-            className={`w-full object-cover object-center`}
+            className={`w-full object-cover rounded-md object-center`}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8/eCBPQMRgHFUIX0VAgB4UB0vFSLebwAAAABJRU5ErkJggg=="
           />
         </div>
       </section>
 
       {/**Introduction Section */}
-      <section className={`py-16 border-b border-b-[#FFFFFF2E] px-28 flex items-center`}>
+      <section className={`py-16 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex lg:flex-row flex-col items-center`}>
         <div className={`flex-1`}>
           <Image
             src={`/images/idea.svg`}
@@ -79,11 +81,13 @@ const Page = (): React.ReactNode => {
             height={200}
             alt="The Big Idea"
             className={`w-[90%] object-contain object-center`}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8/eCBPQMRgHFUIX0VAgB4UB0vFSLebwAAAABJRU5ErkJggg=="
           />
         </div>
 
-        <div className={`lg:w-[45%] px-5 md:w-[60%] w-full`}>
-          <h2 className={`text-3xl w-[80%] font-bold font-clash-display`}>
+        <div className={`lg:w-[45%] lg:px-5 md:w-[60%] w-full lg:mt-0 mt-9`}>
+          <h2 className={`lg:text-3xl text-2xl lg:w-[80%] font-bold font-clash-display`}>
             Introduction to getlinked <span className={`text-[#D434FE]`}>tech Hackathon 1.0</span>
           </h2>
 
@@ -99,16 +103,18 @@ const Page = (): React.ReactNode => {
       </section>
 
       {/**Rules and Guidelines Section */}
-      <section className={`py-8 border-b border-b-[#FFFFFF2E] px-28 flex items-center`}>
-        <div className={`lg:w-[50%] w-full relative px-7`}>
+      <section className={`py-8 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex lg:flex-row flex-col-reverse items-center`}>
+        <div className={`lg:w-[50%] w-full relative lg:px-7`}>
           <Image
             src={`/icons/star.svg`}
             alt="Star Icon"
             width={26}
             height={32}
             className={`w-[26px] h-[32px] absolute -top-10 right-[47%]`}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8/eCBPQMRgHFUIX0VAgB4UB0vFSLebwAAAABJRU5ErkJggg=="
           />
-          <h2 className={`text-3xl w-[50%] py-3 font-bold font-clash-display`}>
+          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] py-3 font-bold font-clash-display`}>
             Rules and <span className={`text-[#D434FE]`}>Guidelines</span>
           </h2>
 
@@ -134,7 +140,7 @@ const Page = (): React.ReactNode => {
       </section>
 
       {/**Judging Criteria section */}
-      <section className={`py-24 border-b border-b-[#FFFFFF2E] px-28 flex items-center`}>
+      <section className={`lg:py-24 py-14 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex lg:flex-row flex-col items-center`}>
         <div className={`flex-1`}>
           <Image
             src={`/images/judging_image.svg`}
@@ -142,10 +148,12 @@ const Page = (): React.ReactNode => {
             width={200}
             height={200}
             className={`w-full object-contain object-center`}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8/eCBPQMRgHFUIX0VAgB4UB0vFSLebwAAAABJRU5ErkJggg=="
           />
         </div>
 
-        <div className={`lg:w-[50%] ml-5 w-full relative px-7`}>
+        <div className={`lg:w-[50%] lg:ml-5 w-full relative lg:px-7`}>
           <Image
             src={`/icons/star.svg`}
             alt="Star Icon"
@@ -153,7 +161,7 @@ const Page = (): React.ReactNode => {
             height={32}
             className={`w-[26px] h-[32px] block lg:hidden absolute -top-10 right-[47%]`}
           />
-          <h2 className={`text-3xl w-[50%] py-3 font-bold font-clash-display`}>
+          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] py-3 font-bold font-clash-display`}>
             Judging Criteria <span className={`text-[#D434FE]`}>Key attributes</span>
           </h2>
 
@@ -174,25 +182,25 @@ const Page = (): React.ReactNode => {
       </section>
 
       {/**Faqs Section */}
-      <section className={`py-8 border-b border-b-[#FFFFFF2E] px-28 flex items-center`}>
-        <div className={`lg:w-[50%] w-full relative px-7`}>
-          <h2 className={`text-3xl w-[50%] py-3 font-bold font-clash-display`}>
+      <section className={`py-8 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex lg:flex-row flex-col-reverse items-center`}>
+        <div className={`lg:w-[50%] w-full relative lg:px-7`}>
+          <h2 className={`lg:text-3xl text-2xl lg:w-[50%] lg:mt-0 mt-9 py-3 font-bold font-clash-display`}>
             Frequently Asked <span className={`text-[#D434FE]`}>Questions</span>
           </h2>
 
-          <p className={`text-[13px] w-[70%]`}>
+          <p className={`text-[13px] lg:w-[70%]`}>
             We got answers to the questions that you might
             want to ask about getlinked Hackathon 1.0
           </p> <br />
 
           <section>
             {Faqs.map((faq, index) => (
-              <div key={index} className={`flex w-[28rem] py-2 border-b my-2 cursor-pointer border-[#D434FE] items-center justify-between`}>
+              <div key={index} className={`flex w-[28rem] max-w-full py-2 border-b my-2 cursor-pointer border-[#D434FE] items-center justify-between`}>
                 <p className={`text-sm`}>
                   {faq.question}
                 </p>
 
-                <p className={`text-[#D434FE] text-2xl font-bold`}>
+                <p className={`text-[#D434FE] text-2xl ml-3 font-bold`}>
                   +
                 </p>
               </div>
@@ -207,12 +215,14 @@ const Page = (): React.ReactNode => {
             width={200}
             height={200}
             className={`w-full object-contain object-center`}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8/eCBPQMRgHFUIX0VAgB4UB0vFSLebwAAAABJRU5ErkJggg=="
           />
         </div>
       </section>
 
       {/**Timeline Section */}
-      <section className={`py-14 border-b border-b-[#FFFFFF2E] px-28 flex flex-col items-center justify-center`}>
+      <section className={`py-14 border-b border-b-[#FFFFFF2E] lg:px-28 px-4 flex flex-col items-center justify-center`}>
         <h1 className={`font-clash-display text-3xl font-extrabold`}>
           Timeline
         </h1>

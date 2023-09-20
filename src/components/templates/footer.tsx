@@ -4,9 +4,9 @@ import FooterLinks from '@/json/footerLinks.json';
 
 const Footer = (): React.ReactNode => {
   return (
-    <footer className={`py-10 bg-[#100B20] font-montserrat text-white px-24`}>
-      <section className={`flex items-start`}>
-        <section className={`w-[40%]`}>
+    <footer className={`py-10 bg-[#100B20] font-montserrat text-white lg:px-24 px-6`}>
+      <section className={`flex flex-wrap items-start`}>
+        <section className={`lg:w-[40%] w-full`}>
           <Image
             src={`/images/getlinked.svg`}
             width={100}
@@ -36,8 +36,8 @@ const Footer = (): React.ReactNode => {
           </div>
         </section>
 
-        <section className={`flex-1 px-16`}>
-          <div className={`w-full flex justify-between items-start`}>
+        <section className={`flex-1 lg:px-16 lg:mt-0 mt-6`}>
+          <div className={`w-full flex flex-wrap justify-between items-start`}>
             <section>
               <h3 className={`text-[#D434FE] mb-2 text-base`}>Useful Links</h3>
               <ul>
@@ -53,7 +53,7 @@ const Footer = (): React.ReactNode => {
               </ul>
             </section>
 
-            <section>
+            <section className={`lg:mt-0 mt-3`}>
               <h3 className={`text-[#D434FE] mb-2 text-base`}>Contact Us</h3>
               <div className={`flex items-center font-montserrat`}>
                 <Image
