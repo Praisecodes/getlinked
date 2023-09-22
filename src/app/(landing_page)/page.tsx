@@ -255,7 +255,7 @@ const Page = (): React.ReactNode => {
       </section> */}
 
       {/**Prizes and rewards section */}
-      <section className={`flex itesm-start lg:px-14 lg:py-16 py-10 bg-[#100B2055] lg:flex-row flex-col`}>
+      <section className={`flex itesm-start lg:px-14 lg:py-16 py-8 bg-[#100B2088] lg:flex-row flex-col`}>
         <div className={`flex-1 hidden lg:block`}>
           <Image
             src={`/images/trophy_image.svg`}
@@ -292,6 +292,107 @@ const Page = (): React.ReactNode => {
             width={300}
             height={300}
             className={`lg:w-[80%] lg:mt-8 w-full object-cover object-center`}
+          />
+        </div>
+      </section>
+
+      {/**Partners and Sponsors */}
+      <section className={`flex border-b border-b-[#FFFFFF2E] flex-col items-center justify-center lg:px-20 px-4 lg:py-14 py-10`}>
+        <h2 className={`lg:text-3xl text-2xl lg:text-left text-center py-3 font-bold font-clash-display`}>
+          Partners and Sponsors
+        </h2>
+
+        <p className={`text-center lg:w-[45%] w-full text-sm`}>
+          Getlinked Hackathon 1.0 is honored to have the following major
+          companies as its partners and sponsors
+        </p> <br /> <br /> <br />
+
+        <Image
+          src={`/images/partner-and-sponsors-section.svg`}
+          alt="Partners And Sponsors Section"
+          width={300}
+          height={300}
+          className={`lg:w-[70%] w-full`}
+        />
+      </section>
+
+      {/**Privacy policy section */}
+      <section className={`flex items-start lg:flex-row flex-col-reverse lg:py-20 py-10 lg:px-20 px-4`}>
+        <div className={`lg:w-[55%]`}>
+          <h2 className={`lg:text-3xl text-2xl lg:text-left text-center lg:w-[50%] py-3 font-bold font-clash-display`}>
+            Privacy Policy and <span className={`text-[#D434FE]`}>Terms</span>
+          </h2>
+          <p className={`py-2 lg:text-left text-center text-[#FFFFFFBF] text-sm`}>
+            Last updated on September 12, 2023
+          </p>
+
+          <p className={`lg:text-left text-center text-sm py-2 lg:w-[70%] w-full`}>
+            Below are our privacy & policy, which outline a lot of goodies.
+            it&apos;s our aim to always take of our participant
+          </p> <br /> <br />
+
+          <section className={`lg:w-[70%] w-full border text-sm border-[#D434FE] rounded-sm py-6 lg:py-10 lg:px-12 px-6 bg-[#D9D9D908]`}>
+            <p>
+              At getlinked tech Hackathon 1.0, we value your privacy
+              and are committed to protecting your personal information.
+              This Privacy Policy outlines how we collect, use, disclose,
+              and safeguard your data when you participate in our tech
+              hackathon event. By participating in our event, you consent
+              to the practices described in this policy.
+            </p> <br /> <br />
+
+            <h3 className={`text-[#D434FE] text-base`}>
+              Licensing Policy
+            </h3>
+            <p className={`font-bold`}>
+              Here are terms of our Standard License:
+            </p><br />
+
+            <div className={`flex items-start space-x-4`}>
+              <Image
+                src={`/icons/check.svg`}
+                width={17}
+                height={17}
+                alt="Checked"
+                className={`w-[17px] object-center`}
+              />
+
+              <p>
+                The Standard License grants you a non-exclusive right to
+                navigate and register for our event
+              </p>
+            </div> <br />
+
+            <div className={`flex items-start space-x-4`}>
+              <Image
+                src={`/icons/check.svg`}
+                width={17}
+                height={17}
+                alt="Checked"
+                className={`w-[17px] object-center`}
+              />
+
+              <p>
+                You are licensed to use the item available at any free source
+                sites, for your project developement
+              </p>
+            </div> <br /><br />
+
+            <div className={`mx-auto w-[8rem]`}>
+              <Button onClick={()=>{}}>
+                Read More
+              </Button>
+            </div>
+          </section>
+        </div>
+
+        <div className={`flex-1`}>
+          <Image
+            src={`/images/privacy_image.svg`}
+            alt="Privacy Image"
+            width={300}
+            height={300}
+            className={`lg:w-[80%] w-full`}
           />
         </div>
       </section>
