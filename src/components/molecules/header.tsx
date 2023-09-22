@@ -54,7 +54,7 @@ const Header = (): React.ReactNode => {
       </button>
 
       {/**Mobile Nav */}
-      <div className={`${mobileNavOpen ? "translate-y-0" : "-translate-y-[100%]"} z-50 duration-300 w-full absolute top-0 left-0 py-4 px-14 rounded-md bg-[#150E28]`}>
+      <div onClick={() => { setMobileNavOpen(false) }} className={`${mobileNavOpen ? "translate-y-0" : "-translate-y-[100%]"} z-50 duration-300 w-full absolute top-0 left-0 py-4 px-14 rounded-md bg-[#150E28]`}>
         <div className={`flex items-center justify-end`}>
           <button onClick={() => { setMobileNavOpen(false) }}>
             <Image
