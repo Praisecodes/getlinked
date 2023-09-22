@@ -253,6 +253,48 @@ const Page = (): React.ReactNode => {
           </div>
         </section>
       </section> */}
+
+      {/**Prizes and rewards section */}
+      <section className={`flex itesm-start lg:px-14 lg:py-16 py-10 bg-[#100B2055] lg:flex-row flex-col`}>
+        <div className={`flex-1 hidden lg:block`}>
+          <Image
+            src={`/images/trophy_image.svg`}
+            alt="Trophy Image"
+            width={300}
+            height={300}
+            className={`lg:w-[80%] w-full object-cover object-center`}
+          />
+        </div>
+
+        <div className={`lg:w-[55%] px-4 lg:px-10 py-10 w-full`}>
+          <div>
+            <h2 className={`lg:text-3xl text-2xl lg:text-left text-center lg:w-[50%] py-3 font-bold font-clash-display`}>
+              Prizes and <span className={`text-[#D434FE]`}>Rewards</span>
+            </h2>
+
+            <p className={`text-sm lg:text-left text-center lg:w-[60%]`}>
+              Highlight of the prizes or rewards for winners and
+              for participants.
+            </p>
+          </div> <br /> <br />
+
+          <Image
+            src={`/images/trophy_responsive.svg`}
+            alt="Trophy Image"
+            width={300}
+            height={300}
+            className={`lg:w-[80%] lg:mb-0 mb-8 lg:hidden block lg:mt-8 w-full object-cover object-center`}
+          />
+
+          <Image
+            src={`/images/prizes.svg`}
+            alt="Prizes Image"
+            width={300}
+            height={300}
+            className={`lg:w-[80%] lg:mt-8 w-full object-cover object-center`}
+          />
+        </div>
+      </section>
     </>
   )
 }
