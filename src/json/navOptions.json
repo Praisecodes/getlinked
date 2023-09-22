@@ -1,18 +1,18 @@
 [
   {
     "name": "Timeline",
-    "route": "/"
+    "route": "/timeline"
   },
   {
     "name": "Overview",
-    "route": "/"
+    "route": "#overview"
   },
   {
     "name": "FAQs",
-    "route": "/"
+    "route": "#faq"
   },
   {
     "name": "Contact",
-    "route": "/"
+    "route": "/contact"
   }
 ]

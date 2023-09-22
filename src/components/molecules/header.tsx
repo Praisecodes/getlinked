@@ -5,9 +5,11 @@ import Link from "next/link";
 import NavOptions from '@/json/navOptions.json';
 import { Button } from "../atoms";
 import { useState } from "react";
+import { usePathname } from 'next/navigation';
 
 const Header = (): React.ReactNode => {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
+  const pathname = usePathname();
 
   return (
     <header className={`border-b relative font-montserrat text-white border-b-[#FFFFFF2E] bg-transparent flex items-center justify-between py-7 lg:px-16 px-4`}>
@@ -26,7 +28,7 @@ const Header = (): React.ReactNode => {
           {NavOptions.map((option, index) => (
             <li key={index} className={`float-left`}>
               <Link href={option.route}>
-                <p>
+                <p className={`hover:bg-clip-text hover:bg-text-grad hover:text-transparent duration-150 ${pathname.startsWith(option.route) && "bg-clip-text bg-text-grad text-transparent"}`}>
                   {option.name}
                 </p>
               </Link>
