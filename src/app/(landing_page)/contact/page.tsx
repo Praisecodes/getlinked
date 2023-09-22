@@ -81,7 +81,7 @@ const Page = (): React.ReactNode => {
       </div>
 
       <div className={`flex-1 flex items-center justify-center`}>
-        <section className={`bg-[#FFFFFF08] w-full lg:w-[80%] mx-auto rounded-md py-10 px-6 lg:px-10`}>
+        <section className={`lg:bg-[#FFFFFF08] w-full lg:w-[80%] mx-auto rounded-md py-10 lg:px-10`}>
           <h2 className={`text-lg font-clash-display text-[#D434FE]`}>
             Questions or need assistance?
           </h2>
