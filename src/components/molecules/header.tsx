@@ -5,11 +5,14 @@ import Link from "next/link";
 import NavOptions from '@/json/navOptions.json';
 import { Button } from "../atoms";
 import { useState } from "react";
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 const Header = (): React.ReactNode => {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const pushToRegister = () => router.push('/register');
 
   return (
     <header className={`border-b relative font-montserrat text-white border-b-[#FFFFFF2E] bg-transparent flex items-center justify-between py-7 lg:px-16 px-4`}>
@@ -37,7 +40,7 @@ const Header = (): React.ReactNode => {
         </ul>
 
         <div className={`w-[9rem] lg:block hidden duration-150`}>
-          <Button onClick={() => { }}>
+          <Button onClick={() => { pushToRegister() }}>
             Register
           </Button>
         </div>
@@ -80,7 +83,7 @@ const Header = (): React.ReactNode => {
         </ul> <br />
 
         <div className={`w-[10rem]`}>
-          <Button onClick={() => { }}>
+          <Button onClick={() => { pushToRegister() }}>
             Register
           </Button>
         </div> <br /><br />
