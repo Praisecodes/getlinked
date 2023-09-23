@@ -4,8 +4,10 @@ import { Button } from "@/components/atoms";
 import Image from "next/image";
 import KeyAttributes from '@/json/keyAttributes.json';
 import Faqs from '@/json/faq.json';
+import { useRouter } from "next/navigation";
 
 const Page = (): React.ReactNode => {
+  const router = useRouter();
   return (
     <>
       <h1 className={`lg:text-xl text-base italic font-bold w-full text-right relative lg:px-14 px-4 py-5`}>
@@ -30,7 +32,7 @@ const Page = (): React.ReactNode => {
           </p> <br />
 
           <div className={`w-[8rem] mt-3 lg:mx-0 mx-auto`}>
-            <Button onClick={() => { }}>
+            <Button onClick={() => { router.push('/register') }}>
               Register
             </Button>
           </div> <br /> <br />
@@ -379,7 +381,7 @@ const Page = (): React.ReactNode => {
             </div> <br /><br />
 
             <div className={`mx-auto w-[8rem]`}>
-              <Button onClick={()=>{}}>
+              <Button onClick={() => { }}>
                 Read More
               </Button>
             </div>

@@ -13,6 +13,6 @@
   },
   {
     "name": "Register",
-    "route": "/"
+    "route": "/register"
   }
 ]
